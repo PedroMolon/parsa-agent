@@ -16,4 +16,4 @@ spring:
     enabled: true
 
 server:
-  port: ${DB_PORT}
+  port: 8080
