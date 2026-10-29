@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: parsa-agent
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+    show_sql: true
+  flyway:
+    enabled: true
+
+server:
+  port: ${DB_PORT}
